@@ -1,0 +1,17 @@
+QUES 1 : implement a method that compresses a sing using the counts of repeated character . ex  "aaabbcccc" -> a3b2c .
+         if compressed string is no smaller return original
+
+QUes 2  given a 2d matrix print all element in a spiral order (clockwise rom outside to inside)
+
+Ques 3  given an array representing heights of bars , calculate how much water can be trapped after raining [3,7 0,3,0,4]
+        can trap units off water
+
+ques 4  for each element in array find the next greater element in an array ,find the nex greater element to its right .
+        if none exits return -1 example [4,5,2,10] -> [5,10,10,-1]
+
+ques 5  find the length of the longest substring without repeating characters . example : "abcabcbb" -> 3 ["abc"]
+
+QUES 6  given any array of stock price find the max profit you can achieve by buying once and selling once .
+        example [7,1,5,3,6,4] -> profit = 5
+
+QUes 7  find the first chacter in a string that doesnot repeat . ex - "leetcode" -> "I" , "loveleetcode" -> "v"
