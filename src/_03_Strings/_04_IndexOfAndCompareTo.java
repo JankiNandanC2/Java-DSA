@@ -30,7 +30,7 @@ public class _04_IndexOfAndCompareTo {
         System.out.println(b.compareTo(a));
         System.out.println();
 
-        a = "aacgggg";
+        a = "abcgggg";
         b = "abc";  // no of times g appaers gere
         System.out.println(a.compareTo(b));
         System.out.println(b.compareTo(a));

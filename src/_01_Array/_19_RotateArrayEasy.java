@@ -1,5 +1,6 @@
 package _01_Array;
 
+import java.util.Collections;
 import java.util.Scanner;
 
 public class _19_RotateArrayEasy {

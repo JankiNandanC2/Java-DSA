@@ -27,6 +27,7 @@ public class  _13_ArrayList {
         int n = arr.size(); // gives size of arraylist
 
         // print arraylist method 1
+        System.out.println();
         System.out.println(arr.get(1));
 
         for (int i = 0; i <= n-1 ; i++) {

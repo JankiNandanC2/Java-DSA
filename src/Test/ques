@@ -1,4 +1,4 @@
-QUES 1 : implement a method that compresses a string using the counts of repeated character . ex  "aaabbcccc" -> a3b2c .
+to do QUES 1 : implement a method that compresses a string using the counts of repeated character . ex  "aaabbcccc" -> a3b2c .
          if compressed string is no smaller return original
 
 QUes 2  given a 2d matrix print all element in a spiral order (clockwise rom outside to inside)
@@ -9,13 +9,13 @@ Ques 3  given an array representing heights of bars , calculate how much water c
 ques 4  for each element in array find the next greater element in an array ,find the nex greater element to its right .
         if none exits return -1 example [4,5,2,10] -> [5,10,10,-1]
 
-ques 5  find the length of the longest substring without repeating characters . example : "abcabcbb" -> 3 ["abc"]
+to do ques 5  find the length of the longest substring without repeating characters . example : "abcabcbb" -> 3 ["abc"]
 
-QUES 6  given any array of stock price find the max profit you can achieve by buying once and selling once .
+to do QUES 6  given any array of stock price find the max profit you can achieve by buying once and selling once .
         example [7,1,5,3,6,4] -> profit = 5
 
-QUes 7  find the first chacter in a string that doesnot repeat . ex - "leetcode" -> "l" , "loveleetcode" -> "v"
+to do QUes 7  find the first chacter in a string that doesnot repeat . ex - "leetcode" -> "l" , "loveleetcode" -> "v"
 
-Ques 8 find the max of contiguos subaray . ex [-2,1,-3,4,-1,2,1,-5,4] -> 6 (subarrays [4,-1,1,2,1]
+Ques 8 find the max of contiguos subaray . ex [-2,1,-3,4,-1,2,1,-5,4] -> 6 (subarrays [4,-1,2,1]
 
-Ques 9  check if a string cntaning bracket is a balannced String . ex - "{[()]}" -> valid , {[(]]} -> invalid
+to do Ques 9  check if a string cntaning bracket is a balannced String . ex - "{[()]}" -> valid , {[(]]} -> invalid

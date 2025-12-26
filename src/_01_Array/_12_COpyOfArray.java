@@ -7,22 +7,23 @@ public class _12_COpyOfArray {
         int[] arr = {30,10,40,23,89,34};
         print(arr);
         // shallow copy -- same array
+        // -- ek m change krnge t dusre m v hoga qnki same hi array h bs name alag alag h
         int[] nums = arr;
         print(nums);
 //        System.out.println();
         nums[0]=44;
         print(nums);
-//        System.out.println(arr[0]);
-//        System.out.println();
+        print(arr);
+        System.out.println();
 
         // deep copy
         int[] brr = Arrays.copyOf(arr,arr.length);
         print(brr);
         brr[0]= 99 ;
-//        System.out.println(arr[0]);
         print(brr);
-        // 2nd option
+        System.out.println(arr[0]);
 
+        // 2nd option
         int[] crr = new int[arr.length];
         print(crr);
         crr[0]= 299;

@@ -17,16 +17,19 @@ public class _10_plusOperator {
         System.out.println(str);
         System.out.println(str2);
         str = 10 + str ; // integer +string
+        System.out.println(str);  // 10abcpqrxyz
+        System.out.println("j"+99+str); // j9910abcpqrxyz
+        str = 'j' + 99 + str ;// 20510abcpqrxyz // char + integer -> int + string
         System.out.println(str);
-        str = 'j' + 99 + str ;
-        System.out.println(str);// string  +  integer + string
 // string
         System.out.println("hi i am "+10 +" years old ");
 // dry run
         System.out.println("abc"+10+20);
-// associativity left to right
- // int + int = int
-// string + int = string //  int + string = string
+        // associativity left to right
+        // int + int = int
+        // string + int = string
+        //  int + string = string
+        // char + int = int
         System.out.println(10+20+"abc");
 
 

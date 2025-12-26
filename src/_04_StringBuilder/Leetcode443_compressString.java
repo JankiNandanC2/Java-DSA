@@ -19,9 +19,9 @@ public class Leetcode443_compressString {
         int length = j-i ;
         if(length > 1) ans+= length ;
         System.out.println(ans);
-// quiz question
-        String a ="java";
-        a = a.toUpperCase();
-        System.out.println(a);
+//// quiz question
+//        String a ="java";
+//        a = a.toUpperCase();
+//        System.out.println(a);
     }
 }
