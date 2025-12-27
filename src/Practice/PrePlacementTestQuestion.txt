@@ -1,0 +1,89 @@
+Got it 👍. You currently have **two HackerRank contest problems open** in your browser:
+
+1. **Problem Statement 41**
+2. **TimeShift Tunnel**
+
+Let me rewrite both in a **clear, detailed format** so you can practice them easily.
+
+---
+
+## 📝 Problem 1: Problem Statement 41
+
+### Input Format
+- **Customer Name** (string)
+- **Car Brand** (string)
+- **Booking Duration** (integer)
+- **Phone Number** (10-digit integer)
+- **Fuel Type** (string: `"electric"`, `"petrol"`, `"diesel"`)
+
+### Output Format
+- Generate a **License Key** using the following rules:
+  - First 3 letters of the customer name (uppercase).
+  - First 2 letters of the car brand (uppercase).
+  - Booking duration (as-is).
+  - Last 3 digits of the phone number.
+  - Fuel type code:
+    - `"electric"` → `E3`
+    - `"petrol"` → `P1`
+    - `"diesel"` → `D2`
+
+- If the customer name contains **special characters**, output:
+  ```
+  Invalid License Key
+  ```
+
+### Sample Input / Output
+```
+Input:
+John Tesla 5 9876543210 electric
+
+Output:
+JOH-TE-5-210-E3
+```
+
+```
+Input:
+Amy Ford 12 8765432101 petrol
+
+Output:
+AMY-FO-12-101-P1
+```
+
+```
+Input:
+K@ren BMW 7 7890123456 diesel
+
+Output:
+Invalid License Key
+```
+
+---
+
+## 📝 Problem 2: TimeShift Tunnel
+
+### Problem Description
+You are managing a **queue system** for visitors entering a tunnel. Visitors can be of three types:
+- **Gold** (highest priority)
+- **Silver** (medium priority)
+- **Regular** (lowest priority)
+
+### Operations
+1. `ARRIVE id type`
+   - Add a visitor with ID and type (`gold`, `silver`, `regular`) to the queue.
+2. `PROCESS`
+   - Serve the next visitor based on priority rules:
+     - Gold visitors are served before Silver and Regular.
+     - Silver visitors are served before Regular.
+     - Within the same type, serve in **arrival order**.
+   - If the queue is empty and `PROCESS` is called, ignore it.
+
+### Output Format
+- Print the IDs of visitors in the order they are processed.
+
+---
+
+✅ So to summarize:
+- **Problem Statement 41** → String manipulation + validation.
+- **TimeShift Tunnel** → Queue simulation with custom priority rules.
+
+Would you like me to also **write step-by-step solutions (code + explanation)** for both so you can directly practice them?

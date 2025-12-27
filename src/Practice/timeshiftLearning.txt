@@ -1,0 +1,67 @@
+Tumhara sawal bohot mature hai. Code syntax seekhna aasan hai, lekin **"Sahi Approach" (Problem Solving Mindset)** develop karna hi actual engineering hai.
+
+Tumhara starting approach (static array wala) isliye fail hua kyunki tumne problem ko **"Data Sorting"** ki tarah dekha, jabki ye problem **"Simulation"** (Real-time events) ki thi.
+
+Apni thinking process aur approach ko improve karne ke liye in 4 steps ko follow karo:
+
+### 1. "Offline" vs. "Online" Processing ka farak samjho
+
+Sabse pehle khud se poocho: **"Kya mere paas saara data pehle se available hai, ya data time ke saath aa raha hai?"**
+
+* **Offline Approach (Tumhara pehla logic):** Tumne socha ki saare `ARRIVE` command ek saath le leta hu, fir unhe sort karke print kar dunga. Ye tab chalta jab problem bolti: *"Saare visitors ki list lo aur batao kon pehle aayega."*
+* **Online Approach (Sahi logic):** Ye problem ek **Live Counter** jaisi thi. Jab `PROCESS` command aayi, tab computer ko nahi pata ki future mein kon aane wala hai using `scan.nextLine()`. Computer ko bas *abhi tak* jo log line mein khade hain, unme se best ko chunna hai.
+
+**Improvement Tip:** Problem padhte hi socho—kya future ka input mere present decision ko affect karega? Agar nahi, toh static array use karo. Agar haan (jaise yahan sequence matter kar raha tha), toh **Loop ke andar decision lo**, loop ke baad nahi.
+
+### 2. "Dry Run" (Pen & Paper) Method use karo
+
+Code likhne se pehle, logic ko paper par "play" karo. Tumhara pehla logic pakda jaata agar tum ye karte:
+
+* **Tumhara Logic Test:**
+Imagine Input:
+1. `ARRIVE A (Regular)`
+2. `PROCESS`
+3. `ARRIVE B (Gold)`
+
+
+* **Paper Trace:** Tumhara code saari lines padh leta. Phir wo dekhta "Oh, B Gold hai!" aur B ko print kar deta.
+* **Reality Check:** Paper pe ungli rakh ke line-by-line chalo.
+* Line 1: A aaya.
+* Line 2: Process dabaya. (Abhi B exist hi nahi karta). Toh output A hona chahiye.
+* Line 3: Ab B aaya.
+
+
+
+
+
+**Improvement Tip:** Hamesha example input ko **ek-ek line karke** mentally execute karo, jaise tum khud computer ho. Jaha logic future ka data access kare (jo abhi tak read nahi hua), waha samjh jao approach galat hai.
+
+### 3. Keywords ko Catch karo
+
+Coding questions mein kuch hidden hints hote hain jo batate hain ki approach kya honi chahiye:
+
+* **"Queries", "Operations", "Simulation", "Stream":** In shabdon ka matlab hai ki code ko **step-by-step** chalna hai (Loop ke andar processing).
+* **"Sort", "Arrange", "List":** Inka matlab hai ki pehle sab data store karo, fir process karo.
+* **"First-Come-First-Serve (FCFS)":** Iska seedha matlab hai **Queue** use hogi.
+* **"Priority":** Iska matlab hai sorting ya priority queue logic lagega.
+
+### 4. Data Structure ko Real World se Jodo
+
+Tumne `String[]` (Array) use kiya, jo ki ek **Box** jaisa hai jisme cheezein fix rehti hain.
+Sahi approach ke liye visualize karo ki data move kaise kar raha hai:
+
+* Log aa rahe hain (Insert).
+* Log ja rahe hain (Remove).
+* Line lambi-choti ho rahi hai (Dynamic size).
+
+Jab data baar-baar change ho raha ho, toh **ArrayList, LinkedList, ya Queue** best hote hain. Jab data fix ho (jaise kisi ke marks), tab Array best hai.
+
+### Summary: Next time kya alag karna hai?
+
+Jab bhi naya question mile, code likhne se pehle ye 2 minute ki exercise karo:
+
+1. **Event Driven Socho:** Kya ye ek movie hai (sab kuch pehle se recorded) ya live match (jo abhi ho raha hai)?
+2. **Container Chuno:** Kya mujhe data ko beech se nikaalna padega? (Agar haan, toh Array mat use karo, List/Queue use karo).
+3. **Manual Test:** Sample input ki pehli 3 lines ko paper par solve karo. Agar tumhara dimaag wahi output de raha hai jo question mein manga hai, tabhi code likhna shuru karo.
+
+Is approach se tum logic building mein bohot strong ho jaoge!
