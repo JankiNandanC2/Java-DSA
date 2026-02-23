@@ -10,7 +10,7 @@ public class _07_InputAndToggleStringBuilder {
 
         for(int i = 0 ; i< sb.length(); i++) {
             int ascii = (int) sb.charAt(i);
-// capital alphabet ascii value 65 to 97
+// capital alphabet ascii value 65 to 90
             if (ascii >= 65 && ascii <= 90) {
                  ascii += 32;
             }
