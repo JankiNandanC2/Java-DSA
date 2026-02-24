@@ -8,6 +8,16 @@ public class _01_MergeTwoSortedArrays {
         System.out.println();
     }
     public static void merge(int[] a , int[] b, int[] c){
+        int i = 0, j = 0, k = 0;
+        while(i<a.length && j<b.length){
+            if( a[i] < b[j] ) c[k++] = a[i++];
+            else c[k++] = b[j++];
+        }
+        while(i<a.length) c[k++] = a[i++] ;
+        while(j<b.length) c[k++] = b[j++] ;
+    }
+    /*
+    public static void merge(int[] a , int[] b, int[] c){
         int i = a.length-1 , j = b.length-1, k = c.length-1 ;
         while(i>=0 && j>=0){
             if( a[i] > b[j] ) c[k--] = a[i--];
@@ -16,6 +26,7 @@ public class _01_MergeTwoSortedArrays {
         if(i==0) c[k] = a[i] ;
         if(j==0) c[k] = b[j] ;
     }
+     */
     static void main(String[] args) {
         int[] a = {10,30,50,60,80,90};
         int[] b = {21,42,72,78};
