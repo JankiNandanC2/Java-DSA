@@ -22,11 +22,16 @@ public class _02_MergeSort {
 
         // use sorted array concept
         merge(left ,right,a);
+
+        // to improve the space cmmplexity from nlogn ---> n
+        left = null ;
+        right =null ;
     }
     public static void merge(int[] a , int[] b, int[] c){
         int i = 0, j = 0, k = 0;
         while(i<a.length && j<b.length){
-            if( a[i] < b[j] ) c[k++] = a[i++];
+            // to maintain the stability of array i.e relative position of two equal elements we make it a[i] <= b[j]
+            if( a[i] <= b[j] ) c[k++] = a[i++];
             else c[k++] = b[j++];
         }
         while(i<a.length) c[k++] = a[i++] ;
