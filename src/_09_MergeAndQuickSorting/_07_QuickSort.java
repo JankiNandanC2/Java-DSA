@@ -7,20 +7,22 @@ public class _07_QuickSort {
         arr[j] = temp ;
     }
     public static int partition(int[] arr , int low  , int high ){
-        int pivot = arr[low] , smallerCount = 0 ;
-        for (int i = low +1 ; i <= high; i++) {
-            if(arr[i] < pivot ) smallerCount++ ;
+        int mid = (low+high)/2 ;
+        int pivot = arr[mid] , smallerCount = 0 ;
+        for (int i = low ; i <= high; i++) {
+            if(i == mid ) continue;
+            if(arr[i] <= pivot ) smallerCount++ ;
         }
         int correctIndx = low + smallerCount ;
-        swap(arr,low , correctIndx);
-        // now make changes i.e pivot ya correct indx ke left me usse chhota number higa and right me usse bada number hoga
+        swap(arr, mid , correctIndx);
         int i = low , j = high ;
         while(i < correctIndx && j > correctIndx){
-            if(arr[i]<arr[correctIndx]) i++ ;
-            else if (arr[j] > arr[correctIndx]) j-- ;
-            else if(arr[i] > arr[correctIndx] && arr[j] < arr[correctIndx]){
+            if(arr[i]< pivot) i++ ;
+            else if (arr[j] > pivot) j-- ;
+            else if(arr[i] > pivot && arr[j] <= pivot){
                 swap(arr, i, j);
-                i++ ; j--;
+                i++ ;
+                j--;
             }
         }
         return correctIndx ;
