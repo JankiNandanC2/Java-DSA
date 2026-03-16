@@ -2,7 +2,7 @@ package _03_Strings;
 
 import java.util.Scanner;
 
-public class _11_StringToInteger {
+public class _11_integerToString {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();

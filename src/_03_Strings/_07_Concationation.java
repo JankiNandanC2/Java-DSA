@@ -15,5 +15,14 @@ public class _07_Concationation {
         System.out.println(b+a);
         b = b.concat(a);
         System.out.println(b);
+
+        // to conacat a char to String
+        char c = 'j';
+        b = b.concat(String.valueOf(c));
+        System.out.println(b);
+        // method 2
+        char ch = 'X' ;
+        b += ch ;
+        System.out.println(b);
     }
 }

@@ -16,12 +16,11 @@ public class _12_NumberOfDigits {
         System.out.println(count);*/
 //  without use of loop
         // using inbuilt string function
-//        int num = scan.nextInt();
-//        String str = Integer.toString(num);
-//        System.out.println(str.length());
+        int nums = scan.nextInt();
+        String str = Integer.toString(nums);
+        System.out.println(str.length());
 
         // or
-        int nums = scan.nextInt();
         String s = ""+ nums;
         System.out.println(s.length());
 

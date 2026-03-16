@@ -23,15 +23,13 @@ public class _13_InterningAndNewKeyWord {
         System.out.println(b);
         System.out.println(a.equals(b)); // compares values
         System.out.println(a==b); // compares address
+
         String c = "JankiNandan";
         System.out.println(c);
-
-
         // creating a new string
         String t = new String("JankiNandan");
         System.out.println(t.equals(c)); // compares value
         System.out.println(t==c); // compares address
         System.out.println(t);
-
     }
 }

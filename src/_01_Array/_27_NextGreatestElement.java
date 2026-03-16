@@ -1,5 +1,5 @@
 package _01_Array;
-// brute force approach
+// brute force approach   --  neverus ethis apprroach anywhere in coding platform
 public class _27_NextGreatestElement {
     public static void main(String[] args ){
         int[] nums = {12,8,41,37,2,49,16,28,21};

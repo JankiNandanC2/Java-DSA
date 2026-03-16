@@ -14,12 +14,11 @@ public class _09_PrintAllSubStrings {
 //        }
         // method 2
         // for all a substring
-    /*    for (int i = 1; i <= s.length(); i++) {
+       for (int i = 1; i <= s.length(); i++) {
             System.out.println(s.substring(0,i));
         }
-    */
 //        System.out.println(s.substring(1));
-//        System.out.println();
+        System.out.println("\n");
 
         for (int i = 0; i < s.length(); i++) {
             for (int j = i+1; j <= s.length(); j++) {
