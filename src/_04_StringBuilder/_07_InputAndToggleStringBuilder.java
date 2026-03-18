@@ -7,7 +7,6 @@ public class _07_InputAndToggleStringBuilder {
         Scanner scan = new Scanner(System.in);
         StringBuilder sb = new StringBuilder(scan.nextLine());
         System.out.println(sb);
-
         for(int i = 0 ; i< sb.length(); i++) {
             int ascii = (int) sb.charAt(i);
 // capital alphabet ascii value 65 to 90
@@ -19,6 +18,15 @@ public class _07_InputAndToggleStringBuilder {
                  ascii -= 32;
             }
             sb.setCharAt(i,(char)ascii);
+        }
+
+        // Method 2
+        for(int i = 0 ; i< sb.length(); i++) {
+           char ch = sb.charAt(i);
+           if(Character.isLowerCase(ch))
+               ch = Character.toUpperCase(ch);
+           else ch = Character.toLowerCase(ch) ;
+           sb.setCharAt(i,ch);
         }
         System.out.println(sb);
     }

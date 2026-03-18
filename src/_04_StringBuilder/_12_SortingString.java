@@ -6,7 +6,6 @@ public class _12_SortingString {
     public static void main(String[] args) {
 
         // either all alphabets in capital or small
-
         // char arr can we sorted using arrays.sort
         char[] ch={'j','a','n','k','i'};
         for(char ele : ch){

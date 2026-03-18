@@ -26,10 +26,16 @@ public class _04_StringBuilder {
         System.out.println("capacity of string builder is : "+z.capacity());
 
 // string to string builder
+        System.out.println();
         String s = new String("Janki nandan");
         StringBuilder za = new StringBuilder(s);
         System.out.println(za);
         System.out.println("length of string builder is : "+za.length());
         System.out.println("capacity of string builder is : "+za.capacity());
+
+        // to convert a stringBuilder to String
+        System.out.println();
+        String str = String.valueOf(za);
+        System.out.println("StringBuilder za is now a string : "+str);
     }
 }

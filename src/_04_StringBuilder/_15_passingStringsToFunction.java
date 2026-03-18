@@ -12,5 +12,4 @@ public class _15_passingStringsToFunction {
     public static void change(String s) {
         s = "rana sittu";
     }
-
 }

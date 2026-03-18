@@ -4,14 +4,14 @@ public class _05_StringBuilderFunctions {
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder("JankiNandan");
         StringBuilder db = new StringBuilder("DevakiNandan");
-        System.out.println(sb.compareTo(db));
-        System.out.println(sb.length());
-        System.out.println(sb.capacity());
-        System.out.println(sb.isEmpty());
-        System.out.println(sb.indexOf("k"));
-        System.out.println(sb.lastIndexOf("n"));
-        System.out.println(sb.reverse());
-        System.out.println(sb.hashCode());
+        System.out.println(sb.compareTo(db));  // j-d = 6 --> so output is 6
+        System.out.println(sb.length()); // 11
+        System.out.println(sb.capacity()); // 11 + 16 = 27
+        System.out.println(sb.isEmpty());  // false
+        System.out.println(sb.indexOf("k")); // index = 3
+        System.out.println(sb.lastIndexOf("n")); // 10
+        System.out.println(sb.reverse());  // "nadnaNiknaJ"
+        System.out.println(sb.hashCode());  // 41359092
 
         // setCharAt() function
         StringBuilder sbb = new StringBuilder("JankiNandan");
