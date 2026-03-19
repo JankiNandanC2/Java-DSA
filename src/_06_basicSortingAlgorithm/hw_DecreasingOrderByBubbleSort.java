@@ -7,7 +7,7 @@ public class hw_DecreasingOrderByBubbleSort {
         for(int i = 0 ;i<n-1 ; i++){
             boolean flag = true ;
             for (int j = 0; j < n-i-1; j++) {
-                if(arr[j]<arr[j+1]){
+                if(arr[j]<arr[j+1]){ // only the sign of comaprison is reversed
                     int temp = arr[j];
                     arr[j]= arr[j+1];
                     arr[j+1] = temp ;

@@ -4,7 +4,7 @@ package _06_basicSortingAlgorithm;
 
 import java.util.Arrays;
 
-public class hw_SelectionSort {
+public class  hw_SelectionSort {
     static void main(String[] args) {
         int[] arr ={10,-4,20,1,8,-6};
         int n = arr.length;

@@ -2,7 +2,7 @@ package _06_basicSortingAlgorithm;
 
 
 
-public class _06_InsertionSort {
+public class  _06_InsertionSort {
     static void swap(int[] arr, int i ,int j){
         int temp = arr[i];
         arr[i] = arr[j];

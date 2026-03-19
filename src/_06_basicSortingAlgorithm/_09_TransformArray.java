@@ -1,6 +1,14 @@
 package _06_basicSortingAlgorithm;
 
 import java.util.Arrays;
+/*
+Q9 : Given an array with N distinct elements, convert the
+given array to a form where all elements are in the range
+from 0 to N-1. The order of elements is the same, i.e., 0 is
+placed in the place of the smallest element, 1 is placed for
+the second smallest element, ... N-1 is placed for the largest
+element.
+ */
 
 // sir's approach
 public class _09_TransformArray {
@@ -18,7 +26,7 @@ public class _09_TransformArray {
                     minINdx=  j;
                 }
             }
-            arr[minINdx]= x ;
+            arr[minINdx] = x ;
             x--;
         }
         System.out.println(Arrays.toString(arr));

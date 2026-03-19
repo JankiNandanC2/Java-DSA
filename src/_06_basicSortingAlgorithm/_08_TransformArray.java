@@ -5,11 +5,7 @@ import java.util.Arrays;
 
 public class _08_TransformArray {
     static void main(String[] args) {
-//        int[] arr= {54,11,28,91,47,63};
-//        int[] arr = {1, 2, 3, 4, 5};
-//        int[] arr = {0, 10, 5};
-//        int[] arr = {10, 10, 20, 5};
-        int[] arr = {-5, -10, 0, 5};
+        int[] arr = {40,12,78,34,100,57,23};
         System.out.println(Arrays.toString(arr));
 
         int minIndex = -1 ; // last element index
