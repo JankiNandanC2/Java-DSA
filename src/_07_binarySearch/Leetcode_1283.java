@@ -24,3 +24,31 @@ Output: 44
 
 */
 }
+
+/*
+class Solution {
+    public int smallestDivisor(int[] nums, int threshold) {
+        int n = nums.length ;
+        int mx = nums[0] ;
+        for(int i = 1 ; i < n ; i++ ){
+            mx = Math.max( mx , nums[i]);
+        }
+        int low = 1 , high = mx , ans = 1 ;
+        while(low<=high){
+            int sum = 0 ;
+            int mid = low + (high - low )/2 ;
+            for(int j = 0 ; j < n ; j++){
+                if(nums[j] % mid == 0 )
+                    sum += nums[j] / mid ;
+                else sum += (nums[j] / mid ) + 1;
+            }
+            if(sum <= threshold ) {
+                ans = mid ;
+                high = mid - 1;
+            }
+            else if(sum > threshold ) low = mid + 1;
+        }
+        return ans ;
+    }
+}
+ */

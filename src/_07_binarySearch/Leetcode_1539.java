@@ -17,3 +17,16 @@ public class Leetcode_1539 {
     }
 */
 }
+// brut Force Approach -- O(n)
+/*
+class Solution {
+    public int findKthPositive(int[] arr, int k) {
+        int i = 0 ;
+        for( i = 0 ; i<arr.length ; i++){
+            int missing = arr[i] - (i+1) ;
+            if(missing >= k) return i+k ;
+        }
+        return k + i ;
+    }
+}
+ */

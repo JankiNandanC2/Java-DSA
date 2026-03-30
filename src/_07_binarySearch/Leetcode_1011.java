@@ -28,3 +28,45 @@ public class Leetcode_1011 {
          packages into parts like (2, 3, 4, 5), (1, 6, 7), (8), (9), (10) is not allowed.
      */
 }
+
+/*
+class Solution {
+    public static boolean isPossible(int capacity, int[] arr , int  d){
+        int load = 0 , days = 1;
+        for(int i = 0 ; i<arr.length ; i++){
+            if((load+arr[i]) <= capacity ) {
+                load += arr[i] ;
+            }
+            else{
+                load = arr[i] ;
+                // ye isliye kiye taki dubara se check karna surus kare starting from the current elements
+                days++;
+            }
+        }
+        if(days<=d) return true ;
+        else return false ;
+    }
+    public int shipWithinDays(int[] arr, int days) {
+        int n = arr.length ;
+        int mx = Integer.MIN_VALUE ;
+        int sum = 0 ;
+        for(int i = 0; i<n ; i++){
+            sum += arr[i] ;
+            mx = Math.max(mx , arr[i]);
+        }
+        int low = mx , high = sum , ans = sum ;
+        while(low<=high ){
+            int mid = low + (high - low )/2 ;
+            boolean possible = isPossible(mid, arr , days );
+            if(possible){
+                ans = mid ;
+                high = mid - 1 ;
+            }
+            else {
+                low = mid + 1 ;
+            }
+        }
+        return ans ;
+    }
+}
+ */

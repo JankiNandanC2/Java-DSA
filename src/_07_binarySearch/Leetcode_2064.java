@@ -38,3 +38,34 @@ public class Leetcode_2064 {
     }
  */
 }
+// solved today -- 28 march myself **
+/*
+class Solution {
+    public int noOfShopsCovered(int[] arr , int mid ){
+        int shopsCount = 0 ;
+        for(int i = 0 ; i < arr.length ; i++){
+            shopsCount += (arr[i] + mid - 1) / mid; // ceil division (*********) easy way to find ceil division value
+        }
+        return shopsCount ;
+    }
+    public int minimizedMaximum(int n, int[] quantities) {
+        int size = quantities.length ;
+        int mx = quantities[0];
+        // if(size <= 1) return mx ; ---> not neededed bhai
+        for(int i = 1; i < size ; i++){
+            mx = Math.max(mx , quantities[i]);
+        }
+        int low = 1 , high = mx , ans = mx ;
+        while(low <= high ){
+            int mid = low + (high - low) / 2 ;
+            int no  = noOfShopsCovered(quantities , mid );
+            if(no <= n ){
+                ans = Math.min(ans , mid );
+                high = mid - 1;
+            }
+            else low = mid + 1;
+        }
+        return ans ;
+    }
+}
+ */
