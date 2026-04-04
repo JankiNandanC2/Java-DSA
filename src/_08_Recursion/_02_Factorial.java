@@ -3,8 +3,9 @@ package _08_Recursion;
 import java.util.Scanner;
 
 public class _02_Factorial {
-    public static int fact(int n ){
-        if(n==1 || n==0 ) return 1 ;
+    public static long fact(int n ){
+//        if(n==1 || n==0 ) return 1 ;
+        if(n <= 1 ) return 1 ;
         return n*fact(n-1) ;
     }
     static void main(String[] args) {

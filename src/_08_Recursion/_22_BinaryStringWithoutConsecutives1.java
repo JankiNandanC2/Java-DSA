@@ -11,8 +11,8 @@ public class _22_BinaryStringWithoutConsecutives1 {
             System.out.println(ans);
             return ;
         }
-        binaryString(n,ans+0);
         if(! ans.endsWith("1")) binaryString(n,ans+1);
+        binaryString(n,ans+0);
         /*
         if(ans.length()==0) binaryString(n,ans+1);
         else if( ans.charAt(ans.length()-1) != '1') binaryString(n,ans+1);
