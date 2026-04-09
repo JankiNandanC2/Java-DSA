@@ -1,4 +1,4 @@
-package _11_LinkedList;
+package _11_LinkedListPart1;
 
 class Node {
     int val ; // value
@@ -11,12 +11,19 @@ public class _01_Basics {
     static void main(String[] args) {
         System.out.println();
         Node a = new Node(10);
+        /*
+        System.out.println(a);
+        Node temp = a ;
+        System.out.println(temp);
+        Node tem = new Node(10);
+        System.out.println(tem);
+         */
         Node b = new Node(20);
         Node c = new Node(30);
         Node d = new Node(40);
         Node e = new Node(50);
 
-// linking of nodes
+    // linking of nodes
         a.next = b ; // linking =>  a -> b
         b.next = c ; // linking =>  a -> b -> c
         c.next = d ; // linking =>  a -> b -> c -> d
@@ -37,11 +44,43 @@ public class _01_Basics {
         System.out.println(e.next); //  last  node -->  null
  */
 
-// print the value of nodess
+        // print the value of nodess
         System.out.println(a.val);
         System.out.println(b.val);
         System.out.println(c.val);
         System.out.println(d.val);
         System.out.println(e.val);
+
+        System.out.println();
+
+        System.out.println(a.val);
+        System.out.println(a.next.val);
+        System.out.println(a.next.next.val);
+        System.out.println(a.next.next.next.val);
+        System.out.println(a.next.next.next.next.val);
+
+        //printing using shallow copy
+        /*
+        System.out.println();
+        Node temp = a ;
+        System.out.println(temp.val);
+        temp = temp.next ;
+        System.out.println(temp.val);
+ */
+
+        // printing Linked List using temp(head)
+        System.out.println();
+        Node temp = a ;
+        /*
+        for(int i = 1 ; i <= 5 ; i++){
+            System.out.println(temp.val);
+            temp = temp.next ;
+        }
+ */
+
+        while(temp != null){
+            System.out.println(temp.val);
+            temp = temp.next ;
+        }
     }
 }
