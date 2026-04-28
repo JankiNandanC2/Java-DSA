@@ -35,7 +35,6 @@ class SinglyLinkedList{
         size++ ;
     }
     void InsertAtIndex(int indx , int val){
-        Node temp = new Node(val);
         if(indx == 0 ){  // insert at head
             InsertAtHead(val);
             return ;
@@ -48,14 +47,18 @@ class SinglyLinkedList{
             // tail.next = temp ;
             // tail = temp ;
         }
-        if(indx > size ) {
+        if(indx > size || indx < 0 ) {
             System.err.println("Invalid Index");
             return;
         }
+        Node temp = new Node(val);
         Node x = head ;
-        int i = 0 ;
-        while( i++ < indx - 1)  x = x.next ;
+        //int i = 0 ;
+        //while( i++ < indx - 1)  x = x.next ;
         // insertion at given index
+        for(int i = 1 ; i <= indx -1 ; i++){
+            x = x.next ;
+        }
         temp.next = x.next ;
         x.next= temp ;
         size++ ;
@@ -133,8 +136,14 @@ public class _05_InsertAtAGivenIndex {
         list.display();
         list.Size();
         list.InsertAtIndex(1,99);
+        list.display();
+        list.Size();
         list.InsertAtIndex(5,99);
+        list.display();
+        list.Size();
         list.InsertAtIndex(9,99);
+        list.display();
+        list.Size();
 //        list.InsertAtIndex(12,99);  // Invalid Index
         list.display();
         list.Size();
