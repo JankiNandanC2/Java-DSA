@@ -114,6 +114,7 @@ class SinglyLinkedList{
             i++ ;
         }
         if(temp.next == tail ) {
+            // to keep the track of tail agar tail element ko delete kr r h to usko prev wale jo ki temp jai uspr point krwa de
             tail = temp ;
         }
         temp.next = temp.next.next ;

@@ -1,8 +1,15 @@
 package _09_MergeAndQuickSorting;
 
+import java.util.Random;
+
 public class _08_QuickSortHoareAlgorithm {
     public static int partition(int[] arr , int low  , int high ){
-        int pivot = arr[low];
+//        int pivot = arr[low]; --> gives O(n^2) for sorted array
+        // using random pivot
+         // Random ran = new Random();
+         // int indx = ran.nextInt(high - low + 1) + low ;
+        int pivotIndx = low + (int) (Math.random() * (high - low + 1)) ; // to find random indx
+        int pivot = arr[pivotIndx];
         int i = low-1  , j = high + 1 ;
         while (true){
             do{

@@ -2,8 +2,7 @@ package _09_MergeAndQuickSorting;
 /*
 Given an integer array nums, return the number of reverse pairs in the array.
 A reverse pair is a pair (i, j) where:
-0 <= i < j < nums.length and
-nums[i] > 2 * nums[j].
+0 <= i < j < nums.length and nums[i] > 2 * nums[j].
 
 Example 1:
 Input: nums = [1,3,2,3,1]
@@ -14,7 +13,7 @@ Explanation: The reverse pairs are:
  */
 public class _06_Leetcode493ReversePairs {
     static int count ;
-    public static void inversionCount(int[] a , int[] b ){
+    public static void countReversePairs(int[] a , int[] b ){
         int i = 0 , j = 0 ;
         while(i<a.length && j < b.length){
             if((long) a[i]  > (long) 2 * (long) b[j]){
@@ -54,8 +53,8 @@ public class _06_Leetcode493ReversePairs {
         // use sorted array concept
         merge(left ,right,arr);
 
-        // perform the inversionCount
-        inversionCount(left, right);
+        // perform the count
+        countReversePairs(left, right);
 
         // to improve the space cmmplexity from nlogn ---> n
         left = null ;

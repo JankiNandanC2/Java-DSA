@@ -1,7 +1,7 @@
 package _09_MergeAndQuickSorting;
 
 public class _05_InversionCount {
-    static int count ;
+    static int count ; // not standard choice -- rather return long in both merge and mergesort to track count
     public static void merge( int[] a , int[] b, int[] arr){
         int i = 0, j = 0, k = 0;
         while(i<a.length && j<b.length){

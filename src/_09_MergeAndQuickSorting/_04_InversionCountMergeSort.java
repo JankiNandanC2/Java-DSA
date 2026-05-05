@@ -1,7 +1,10 @@
 package _09_MergeAndQuickSorting;
 
+// not recommended method --- ek ki kam ko do bar kr rh hai
+// i.e counting merge wale function me hi ho jayege alag se method bananna jaruri nahi hai
+
 public class _04_InversionCountMergeSort {
-    static int count ;
+    static long count ;
     public static void inversionCount(int[] a , int[] b ){
          int i = 0 , j = 0 ;
          while(i<a.length && j < b.length){
