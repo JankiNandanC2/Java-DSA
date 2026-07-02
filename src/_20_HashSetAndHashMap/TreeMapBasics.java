@@ -1,0 +1,52 @@
+package _20_HashSetAndHashMap;
+
+
+import java.util.TreeMap;
+
+public class TreeMapBasics {
+    static void main(String[] args) {
+        TreeMap<String ,Integer> map = new TreeMap<>() ;
+
+        // to insert/update in hashMap
+        map.put("Ram" , 88);
+        map.put("alok" , 88);
+        map.put("Alok" , 88);
+        map.put("Rohit" ,98);
+        map.put("rohit" ,98);
+        map.put("Virat", 97);
+        map.put("rana" , 100);
+        map.put("RanaSittu" , 100);
+        System.out.println(map);
+
+        // to search a key in map
+        System.out.println(map.containsKey("Ram"));
+        System.out.println(map.containsKey("raina"));
+
+        // to search a value
+        System.out.println(map.containsValue(100));
+        System.out.println(map.containsValue(110));
+
+        // to update values
+        map.put("Virat" , 110);
+        System.out.println(map);
+
+
+        // to get the value of a key
+        System.out.println(map.get("Virat"));
+        System.out.println(map.get("sohit")); // null if not preset
+
+        //iterate pairs of map
+        for(String key : map.keySet()){
+            System.out.println(key +" "+ map.get(key));
+            //  key           value
+        }
+
+        for(int val : map.values()){
+            System.out.print(val +"  ");
+        }
+
+        for(Object pair : map.entrySet()){
+            System.out.println(pair);
+        }
+    }
+}
