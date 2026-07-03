@@ -1,6 +1,7 @@
 package _20_HashSetAndHashMap;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class HashMapBasics {
     static void main(String[] args) {
@@ -22,7 +23,8 @@ public class HashMapBasics {
         System.out.println(map.containsValue(110));
 
         // to update values
-        map.put("Virat" , 110);
+        int oldValue = map.put("Virat" , 110);
+        System.out.println(oldValue);
         System.out.println(map);
 
 
@@ -40,8 +42,9 @@ public class HashMapBasics {
             System.out.print(val +"  ");
         }
 
-        for(Object pair : map.entrySet()){
-            System.out.println(pair);
+        for(Map.Entry pair : map.entrySet()){
+            System.out.println(pair.getKey());
+            System.out.println(pair.getValue());
         }
     }
 }
