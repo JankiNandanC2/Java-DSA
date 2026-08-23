@@ -43,7 +43,7 @@ public class collectionsClass {
         Collections.reverse(list);
         System.out.println(list);
 // binary search in list
-        int indx = Collections.binarySearch(list,55);
+        int indx = Collections.binarySearch(list,1);
         System.out.println("Index is:  "+indx);
 // to find min value in list
         int a = Collections.min(list);
