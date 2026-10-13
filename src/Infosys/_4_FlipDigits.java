@@ -33,10 +33,11 @@ public class _4_FlipDigits {
 //        }
 
         int number = 0 ;
+        int base = 2 ;
         for( int i = 0 ; i < s.length() ; i++ ){
             int currBitValue = s.charAt(i) -'0' ;
             // number = ( number * base + newDigit ) -- for any base 2,10 etc
-            number = ( number * 2 + currBitValue ) % MOD ;
+            number = ( number * base + currBitValue ) % MOD ;
         }
         System.out.println(number);
     }

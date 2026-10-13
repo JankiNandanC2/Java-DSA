@@ -28,6 +28,17 @@ public class _7_FindBase {
             }
             base++ ;
         }
-        System.out.println(ans);
+        System.out.println("base is : "+ ans);
+//        System.out.println(Integer.compare(m , base));
+        long number = BaseToNumber(m+"" , base);
+        System.out.println("number is : "+number);
+    }
+    public static Long BaseToNumber(String num , int base ){
+        long number = 0 ;
+        long MOD = (long) 1e8;
+        for(int i = 0 ; i < num.length() ; i++){
+            number = (number * base + num.charAt(i)-'0') % MOD ;
+        }
+        return number ;
     }
 }

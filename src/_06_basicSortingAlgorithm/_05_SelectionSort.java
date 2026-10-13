@@ -19,18 +19,19 @@ public class _05_SelectionSort {
         System.out.println("and its index is "+mnIndx);
          */
         for (int i = 0; i < n-1; i++) {
-            int min=Integer.MAX_VALUE ;
-            int minIndex = -1 ;
-            for (int j = i; j < n; j++) {
+            int min= arr[i] ;
+            int minIndex = i ;
+            for (int j = i+1; j < n; j++) {
                 if(arr[j]<min) {
                     min = arr[j];
                     minIndex = j;
                 }
             }
-            //  swap minIndex and i th element of array
-            int temp = arr[minIndex];
-            arr[minIndex]=arr[i];
-            arr[i]=temp ;
+            if(i != minIndex){
+                int temp = arr[minIndex];
+                arr[minIndex]=arr[i];
+                arr[i]=temp ;
+            }
         }
         for (int ele : arr) {
             System.out.print(ele + " ");

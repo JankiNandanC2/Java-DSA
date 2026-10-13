@@ -1,5 +1,8 @@
 package _07_binarySearch;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Leetcode658 {
     /*
     658. Find K Closest Elements
@@ -11,7 +14,48 @@ public class Leetcode658 {
     */
 }
 
+
+// better approach avoids collection.sort
+// time complexity --> O( logn + k )
+class BetterSolution {
+    public List<Integer> findClosestElements(int[] arr, int k, int x) {
+
+        int n = arr.length ;
+        List<Integer> list = new ArrayList<>();
+
+        int low = 0 , high = n-1 ;
+        int indx = n ; // indx of lowerbound of x
+
+        while(low <= high ){
+            int mid = low + (high -low)/2;
+            if( arr[mid] >= x ){
+                indx = mid ;
+                high = mid - 1;
+            }
+            else low = mid + 1;
+        }
+
+        // now find the k closest
+        int left = indx-1 , right = indx ;
+
+        for(int i = 0 ; i < k ; i++){
+            if( left < 0 ) right++ ;
+            else if( right >= n ) left-- ;
+            else if( Math.abs(arr[left]-x) <= Math.abs(arr[right] - x)) left--;
+            else right++;
+        }
+
+        //add to list
+        for(int i = left+1 ; i < right ; i++)
+            list.add(arr[i]);
+
+        return list ;
+    }
+}
+
+
 /*
+time complexity O( n log n ) or O ( log n + k log k )
 class Solution {
     public List<Integer> findClosestElements(int[] arr, int k, int x) {
         int n = arr.length;

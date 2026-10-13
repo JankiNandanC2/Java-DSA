@@ -28,5 +28,10 @@ public class _01_BasicStack {
         }
         System.out.println("first element is : "+ st.peek());
         System.out.println("Size of stack is : "+ st.size());
+
+        // toc heck an existing element
+        st.push(99);
+        System.out.println(st.contains(99));
+        System.out.println(st.search(99));
     }
 }
