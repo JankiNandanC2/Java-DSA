@@ -5,6 +5,8 @@ import java.util.*;
 public class MergeIntervalLeetCode56 {
 }
 
+// second try myself
+/*
 class Solution99 {
     public int[][] merge(int[][] arr) {
         if( arr.length == 1) return arr ;
@@ -36,7 +38,7 @@ class Solution99 {
         for(int[] a : list ) ans[indx++] = a ;
         return ans  ;
     }
-}
+} */
 
 
 class Solution991 {

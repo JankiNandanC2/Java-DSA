@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Leetcode1005 {
     public static class Solution {
-        public int largestSumAfterKNegations(int[] nums, int k) {
+        public void largestSumAfterKNegations(int[] nums, int k) {
             Arrays.sort(nums) ;
             int i = 0 ;
             while( (i < nums.length) && (k > 0)){
@@ -24,7 +24,6 @@ public class Leetcode1005 {
             int sum = 0 ;
             for(int ele : nums) sum += ele ;
 
-            return sum ;
         }
     }
     public static void main(String[] args ){
